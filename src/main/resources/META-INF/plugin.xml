@@ -1,10 +1,23 @@
 <idea-plugin>
     <id>com.github.al-assad.intellij-plugin-open-in-os</id>
-    <name>Open In OS</name>
+    <name>Open in OS App</name>
     <vendor email="yulinying_1994@outlook.com" url="https://github.com/Al-assad">Al-assad</vendor>
 
     <description><![CDATA[
-    Plugin to Open file in Default Application of OS.
+    Plugin to open file in os default application.
+    <br>
+    <br>
+    For example, you can use <b>Typora.app</b> to open <b>Markdown</b> files directly from within your intellij application (if Typora is your default md app).
+    <br>
+    <br>
+    Default shortcut keys:
+    <ul>
+    <li>Win/Linux: ctrl + alt + F </li>
+    <li>MacOS: ctrl + option + F </li>
+    </ul>
+    <br>
+    <a href="https://github.com/Al-assad/intellij-plugin-open-in-os">Source Code</a>
+    <br>
     ]]></description>
 
     <idea-version since-build="203"/>
