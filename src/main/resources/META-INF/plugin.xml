@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>com.github.al-assad.intellij-plugin-open-in-os</id>
+    <name>Open In OS</name>
+    <vendor email="yulinying_1994@outlook.com" url="https://github.com/Al-assad">Al-assad</vendor>
+
+    <description><![CDATA[
+    Plugin to Open file in Default Application of OS.
+    ]]></description>
+
+    <idea-version since-build="203"/>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="com.github.alassad.oioda.notify" displayType="BALLOON" key="Open in Default OS Application Plugin"/>
+    </extensions>
+
+    <actions>
+        <action id="com.github.alassad.oioda.actions.OpenInOsDefaultAppAction"
+                class="com.github.alassad.oioda.actions.OpenInOsDefaultAppAction"
+                text="OS Default Application"
+                icon="Icons.DESKTOP_ICON"
+                description="Open current file in os default application">
+            <add-to-group group-id="RevealGroup" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt F"/>
+        </action>
+    </actions>
+
+</idea-plugin>
