@@ -1,6 +1,6 @@
 # IntelliJ Plugin Open In Default OS App
 
-
+<br>
 
 Plugin to open file in os default application.
 
