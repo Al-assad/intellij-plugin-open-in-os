@@ -13,16 +13,16 @@
     Default shortcut keys:
     <ul>
     <li>Win/Linux: ctrl + alt + F </li>
-    <li>MacOS: command + option + F </li>
+    <li>MacOS: ctrl + option + F </li>
     </ul>
     <br>
     <a href="https://github.com/Al-assad/intellij-plugin-open-in-os">Source Code</a>
     <br>
     ]]></description>
 
-    <depends>com.intellij.modules.platform</depends>
+    <idea-version since-build="203"/>
 
-    <idea-version since-build="201"/>
+    <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <notificationGroup id="com.github.alassad.oioda.notify" displayType="BALLOON" key="Open in Default OS Application Plugin"/>
@@ -31,7 +31,7 @@
     <actions>
         <action id="com.github.alassad.oioda.actions.OpenInOsDefaultAppAction"
                 class="com.github.alassad.oioda.actions.OpenInOsDefaultAppAction"
-                text="OS Default App"
+                text="OS Default Application"
                 icon="Icons.DESKTOP_ICON"
                 description="Open current file in os default application">
             <add-to-group group-id="RevealGroup" anchor="last"/>
