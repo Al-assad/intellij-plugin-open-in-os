@@ -15,5 +15,5 @@ Default shortcut keys；
 
 
 
-<img src="../../Downloads/202106120021.png" alt="image-20210612005318568" style="zoom: 50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Al-assad/md-img@master/bucket-3/202106120105.png" alt="image-20210612005318568" style="zoom: 50%;" />
 
