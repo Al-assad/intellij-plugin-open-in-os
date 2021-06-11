@@ -20,14 +20,7 @@ import java.io.IOException;
  * @author yulinying
  * @email yulinying_1994@outlook.com
  */
-@SuppressWarnings("FieldMayBeFinal")
 public class OpenInOsDefaultAppAction extends AnAction {
-    
-    private static Desktop desktop = Desktop.getDesktop();
-    
-    private static final NotificationGroup notificationGroup = NotificationGroupManager.getInstance()
-            .getNotificationGroup("com.github.alassad.oioda.notify");
-    
     
     @Override
     public void actionPerformed(AnActionEvent event) {
@@ -39,15 +32,16 @@ public class OpenInOsDefaultAppAction extends AnAction {
         }
         File file = new File(vFile.getPath());
         try {
-            desktop.open(file);
+            Desktop.getDesktop().open(file);
         } catch (IOException e) {
             notify("cannot open file", MessageType.ERROR);
         }
     }
     
-    
     private static void notify(@Nonnull String content, @Nonnull MessageType type) {
-        Notification notification = notificationGroup.createNotification(content, type);
+        Notification notification = NotificationGroupManager.getInstance()
+                .getNotificationGroup("com.github.alassad.oioda.notify")
+                .createNotification(content, type);
         Notifications.Bus.notify(notification);
     }
     
