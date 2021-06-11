@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.github.al-assad'
-version '0.3'
+version '0.8'
 
 repositories {
     mavenCentral()
@@ -15,9 +15,13 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }
 
-// See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2021.1.1'
+    version '201'
+}
+
+patchPluginXml {
+    version = project.version
+    sinceBuild = '201'
 }
 
 test {
