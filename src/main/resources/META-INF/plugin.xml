@@ -22,7 +22,7 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <idea-version since-build="201"/>
+    <idea-version since-build="203"/>
 
     <extensions defaultExtensionNs="com.intellij">
         <notificationGroup id="com.github.alassad.oioda.notify" displayType="BALLOON" key="Open in Default OS Application Plugin"/>
