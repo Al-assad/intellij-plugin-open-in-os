@@ -16,12 +16,12 @@ dependencies {
 }
 
 intellij {
-    version '201'
+    version '203'
 }
 
 patchPluginXml {
     version = project.version
-    sinceBuild = '201'
+    sinceBuild = '203'
 }
 
 test {
